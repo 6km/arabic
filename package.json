@@ -8,12 +8,13 @@
     "dist"
   ],
   "scripts": {
-    "build": "tsc"
+    "build": "pkgroll"
   },
   "keywords": [],
   "author": "",
   "license": "MIT",
   "devDependencies": {
+    "pkgroll": "^2.12.1",
     "typescript": "^5.8.2"
   }
 }
