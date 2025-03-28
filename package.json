@@ -2,8 +2,19 @@
   "name": "arabic",
   "version": "1.0.0",
   "description": "",
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.cts",
+  "exports": {
+    "require": {
+        "types": "./dist/index.d.cts",
+        "default": "./dist/index.cjs"
+    },
+    "import": {
+        "types": "./dist/index.d.mts",
+        "default": "./dist/index.mjs"
+    }
+  },
   "files": [
     "dist"
   ],
@@ -16,5 +27,9 @@
   "devDependencies": {
     "pkgroll": "^2.12.1",
     "typescript": "^5.8.2"
+  },
+  "repository": {
+    "type": "github",
+    "url": "https://github.com/6km/arabic"
   }
 }
