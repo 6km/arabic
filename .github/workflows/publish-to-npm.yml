@@ -9,7 +9,7 @@ on:
         default: 'warning'
 
 jobs:
-  build: 
+  build-and-publish: 
     runs-on: ubuntu-latest
     environment: 
       name: npm-publish
