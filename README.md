@@ -2,6 +2,19 @@
 
 A tiny library for dealing with Arabic text.
 
+# Installation
+
+```sh
+# npm
+npm install arabic
+
+# yarn
+yarn add arabic
+
+# pnpm
+pnpm add arabic
+```
+
 # Usage example
 
 ```js
