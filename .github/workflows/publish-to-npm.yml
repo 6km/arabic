@@ -11,6 +11,8 @@ on:
 jobs:
   build: 
     runs-on: ubuntu-latest
+    environment: 
+      name: main
     permissions: 
         id-token: write
     steps:
