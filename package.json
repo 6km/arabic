@@ -7,12 +7,12 @@
   "types": "./dist/index.d.cts",
   "exports": {
     "require": {
-        "types": "./dist/index.d.cts",
-        "default": "./dist/index.cjs"
+      "types": "./dist/index.d.cts",
+      "default": "./dist/index.cjs"
     },
     "import": {
-        "types": "./dist/index.d.mts",
-        "default": "./dist/index.mjs"
+      "types": "./dist/index.d.mts",
+      "default": "./dist/index.mjs"
     }
   },
   "files": [
@@ -21,7 +21,13 @@
   "scripts": {
     "build": "pkgroll"
   },
-  "keywords": ["arabic", "utils", "digits", "numbers", "tashkeel"],
+  "keywords": [
+    "arabic",
+    "utils",
+    "digits",
+    "numbers",
+    "tashkeel"
+  ],
   "author": "Mohammed Taha <gsft22221@gmail.com>",
   "license": "MIT",
   "devDependencies": {
@@ -30,6 +36,6 @@
   },
   "repository": {
     "type": "github",
-    "url": "https://github.com/6km/arabic"
+    "url": "git+https://github.com/6km/arabic.git"
   }
 }
