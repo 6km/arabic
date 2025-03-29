@@ -9,12 +9,8 @@ on:
         default: 'warning'    
 
 jobs:
-  publish-npm:
-    environment: 
-      name: npm-publish
+  build: 
     runs-on: ubuntu-latest
-    permissions: 
-      id-token: write
     steps:
     - name: Checkout repository
       uses: actions/checkout@v4
@@ -30,7 +26,15 @@ jobs:
 
     - name: Build with pkgroll
       run: npm run build
-    
+  publish-npm:
+    needs: 
+      build
+    environment: 
+      name: npm-publish
+    runs-on: ubuntu-latest
+    permissions: 
+      id-token: write
+    steps:
     - name: Publish to NPM
       run: npm publish --provenance --access public
       env:
