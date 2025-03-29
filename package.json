@@ -21,8 +21,8 @@
   "scripts": {
     "build": "pkgroll"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": ["arabic", "utils", "digits", "numbers", "tashkeel"],
+  "author": "Mohammed Taha <gsft22221@gmail.com>",
   "license": "MIT",
   "devDependencies": {
     "pkgroll": "^2.12.1",
