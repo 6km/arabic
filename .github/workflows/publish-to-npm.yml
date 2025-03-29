@@ -4,9 +4,9 @@ on:
   workflow_dispatch: 
     inputs:
       logLevel:
-        description: 'Log level'     
+        description: 'Log level'
         required: true
-        default: 'warning'    
+        default: 'warning'
 
 jobs:
   build: 
@@ -15,7 +15,7 @@ jobs:
     - name: Checkout repository
       uses: actions/checkout@v4
 
-    - name: Setup Node.js 18
+    - name: Setup Node.js 20
       uses: actions/setup-node@v4
       with:
         node-version: '20.x'
@@ -26,9 +26,9 @@ jobs:
 
     - name: Build with pkgroll
       run: npm run build
+
   publish-npm:
-    needs: 
-      build
+    needs: build
     environment: 
       name: npm-publish
     runs-on: ubuntu-latest
